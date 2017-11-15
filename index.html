@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>电子日历</title>
+		<link rel="stylesheet" href="calendar.css">
+		
+	</head>
+	<body onload="showDate()">
+		<h3>电子日历</h3>
+		<hr/>
+		<div id="calendar">  
+		
+		<!--状态栏-->
+			<div>
+				<button onclick="lastMonth()">上个月</button>
+				<div id="month"></div>
+				<button onclick="nextMonth()">下个月</button>
+			</div>
+		<!--星期几-->
+			<div>
+				<div class="everyday">日</div>
+				<div class="everyday">一</div>
+				<div class="everyday">二</div>
+				<div class="everyday">三</div>
+				<div class="everyday">四</div>
+				<div class="everyday">五</div>
+				<div class="everyday">六</div>
+			</div>
+		<!--日期-->
+			<div id="day"></div>
+		
+		</div>
+		<script src="calendar.js"></script>
+	</body>
+</html>
